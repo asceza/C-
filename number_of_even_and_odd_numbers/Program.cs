@@ -6,10 +6,10 @@ namespace numbers
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите целое положтельное число: ");
-            uint a = uint.Parse(Console.ReadLine());
+            Console.Write("Введите целое положительное число: ");
+            uint limit = uint.Parse(Console.ReadLine());
             uint evenNumCount = 0, oddNumCount = 0, evenNumSum = 0, oddNumSum = 0;
-            for (uint i = 1; i <= a; i++)
+            for (uint i = 1; i <= limit; i++)
             {
                 //Console.Write(i + " ");
                 if (i % 2 == 0)
@@ -24,8 +24,8 @@ namespace numbers
                 }
             }
             Console.WriteLine("");
-            Console.WriteLine($"Четные: {evenNumCount} шт, сумма четных чисел от 1 до {a} = {evenNumSum}");
-            Console.WriteLine($"Нечетные: {oddNumCount} шт, сумма нечетных чисел от 1 до {a} = {oddNumSum}");
+            Console.WriteLine($"Четные: {evenNumCount} шт, сумма четных чисел от 1 до {limit} = {evenNumSum}");
+            Console.WriteLine($"Нечетные: {oddNumCount} шт, сумма нечетных чисел от 1 до {limit} = {oddNumSum}");
             Console.ReadLine();
         }
     }
